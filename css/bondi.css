@@ -1,0 +1,236 @@
+body{
+    font-family: 'Roboto', sans-serif;
+ user-select: none;;   
+
+}
+:root{
+    --dark-color:#19283f;
+    --red-color:#ff3150;
+    --green-color:#33d1cc;
+    --section-color:#eff7fa;
+    --yeloo-color:#ffc537;
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .nav-item .nav-link{
+    color:white;
+    font-size: 1.3rem;
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus
+{
+
+    color:var(--green-color)
+}
+.search{
+    border-left: 1px solid var(--green-color);
+
+}
+.search svg{
+    padding-right: 20px;
+    color:var(--green-color);
+    font-size: 1.3rem;;
+
+}
+.navbar-toggler{
+    color:white;
+    border-color: white;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"]{
+    border-color:var(--green-color);
+}
+.main-btn{
+    background-color:var(--red-color);
+    color:var(--yeloo-color);
+    padding: .05rem 1rem;
+}
+.main-btn:hover{
+    color:var(--yeloo-color);
+}
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 70px);
+}
+.feat:after{
+    content:"";
+    width:115px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    bottom:35px;
+}
+.card-title{
+    color:var(--yeloo-color)
+}
+.hold{
+    border:none;
+    min-height: 400px;
+}
+.holder{
+    position: relative;
+}
+.holder .svg1{
+    height: 11rem;
+    color:var(--section-color);
+}
+.holder .svg2{
+    color:var(--green-color);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    font-size: 4rem;
+}
+.our-book{
+    background-color: var(--section-color);
+}
+.our-book ul li{
+    text-transform: capitalize;
+    font-weight: 600;    cursor: pointer;
+    padding: 0.5rem 1rem;
+
+}
+.our-book ul .active{
+    background-color: var(--red-color);
+    color:var(--yeloo-color);
+    border-radius: 50rem!important;
+}
+.our-book ul li:not(.active):hover{
+color:var(--red-color)
+
+}
+.box{
+    overflow: hidden;
+    padding: 5px;
+}
+
+.box::before{
+    content:attr(data-work);
+    position: absolute;
+    background-color: #33d1cc9e;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color:white;
+    transform:translateX(calc(-100% - 5px)) ;
+    -webkit-transform:translateX(calc(-100% - 5px)) ;
+    -moz-transform:translateX(calc(-100% - 5px)) ;
+    -ms-transform:translateX(calc(-100% - 5px)) ;
+    -o-transform:translateX(calc(-100% - 5px)) ;
+}
+.box:hover::before{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.stuff .dis{
+    max-width:400px ;
+}
+.meet{    background-color: var(--section-color);
+
+}
+.team h2{
+    color:var(--yeloo-color)
+}
+.te h5{
+    background-color: var(--green-color);
+}
+.start{
+    background-color: #19283f;
+    min-height: 300px;
+    margin-bottom: 50px;
+}
+.start .pe{
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.te .blo{
+font-weight: 900;
+}
+.te p{
+
+}
+.sub{
+    background-color: var(--yeloo-color);
+}
+.sub .inp{
+    outline:none;
+    border:none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+color:white;
+font-weight: 600;
+}
+.sub ::placeholder{
+    color:white;
+    font-weight: 600;
+}
+.sub .main{
+background-color: var(--dark-color);
+color:var(--yeloo-color);
+font-weight: 600;
+}
+.sec span{
+    color:var(--yeloo-color);
+    font-weight: bolder;;
+}
+.sec .copy{
+    color:var(--green-color);
+}
+.foote{
+    background-color: #19283f;
+}
+.foot-btn{
+    background-color: #ff3150;
+    text-align: center;
+    color:#ffc537;
+    font-weight: bold;
+}
+.ul ul svg{
+    width: 20px;
+    height: 20px;
+}
+
+.ul .one{
+    background-color:#1877f2 ;
+}
+
+.ul .two{
+    background-color:#1da1f2 ;
+    
+}
+
+.ul .three{
+    background-color:#0077b5 ;
+}
+
+.ul .four{
+    background-color:#ff0000 ;
+}
